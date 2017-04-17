@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ifarm-sso:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ifarm-sso.war">
+      <element id="artifact" artifact-name="ifarm-sso:war exploded" />
+    </root>
+  </artifact>
+</component>
