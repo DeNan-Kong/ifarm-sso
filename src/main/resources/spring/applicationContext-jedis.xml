@@ -31,16 +31,18 @@
 		<property name="blockWhenExhausted" value="false" />
 	</bean>	
 	<!-- jedis客户端单机版 -->
-	<!-- <bean id="redisClient" class="redis.clients.jedis.JedisPool">
-		<constructor-arg name="host" value="192.168.25.153"></constructor-arg>
-		<constructor-arg name="port" value="6379"></constructor-arg>
-		<constructor-arg name="poolConfig" ref="jedisPoolConfig"></constructor-arg>
+	 <bean id="redisClient" class="redis.clients.jedis.JedisPool">
+		 <constructor-arg name="poolConfig" ref="jedisPoolConfig"></constructor-arg>
+		 <constructor-arg name="host" value="192.168.1.111"></constructor-arg>
+		 <constructor-arg name="port" value="6379"></constructor-arg>
+		 <constructor-arg name="password" value="redis"></constructor-arg>
+		 <constructor-arg name="timeout" value="2000"></constructor-arg>
 	</bean>
-	<bean id="jedisClient" class="com.taotao.sso.dao.impl.JedisClientSingle"/> -->
+	<bean id="jedisClient" class="com.ifarm.sso.dao.impl.JedisClientSingle"/>
 	
 	
 	<!-- jedis集群版配置 -->
-	<bean id="redisClient" class="redis.clients.jedis.JedisCluster">
+	<!--<bean id="redisClient" class="redis.clients.jedis.JedisCluster">
 		<constructor-arg name="nodes">
 			<set>
 				<bean class="redis.clients.jedis.HostAndPort">
@@ -72,4 +74,5 @@
 		<constructor-arg name="poolConfig" ref="jedisPoolConfig"></constructor-arg>
 	</bean>
 	<bean id="jedisClientCluster" class="com.ifarm.sso.dao.impl.JedisClientCluster"></bean>
+	-->
 </beans>

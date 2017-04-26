@@ -14,8 +14,8 @@
 <body>
 <div class="w" id="logo">
     <div>
-    	<a href="http://www.taotao.com">
-    		<img src="/images/taotao-logo.gif" alt="淘淘商城" width="170" height="60"/>
+    	<a href="http://www.ifarm.com">
+    		<img src="/images/ifarm-logo.png" alt="爱农场商城" width="170" height="60"/>
     	</a> <b></b>
     </div>
 </div>
